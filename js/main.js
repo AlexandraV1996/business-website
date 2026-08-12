@@ -42,6 +42,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }
+  // Portfolio Category Filter Handler
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+
+      document.querySelectorAll('.portfolio-card').forEach(function(card) {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
   });
 
   // Init Modules

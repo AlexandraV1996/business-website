@@ -1708,6 +1708,124 @@ canvas#gameCanvas {
   display: block;
 }
 
+/* PORTFOLIO / FEATURED PROJECTS STYLES */
+.portfolio-filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  color: var(--text-muted);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: var(--border-gold);
+  color: var(--gold-400);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-card {
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-gold);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), var(--shadow-gold);
+}
+
+.port-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.port-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tag-gold { color: var(--gold-400); }
+.tag-cyan { color: var(--cyan-500); }
+.tag-emerald { color: var(--emerald-400); }
+.tag-purple { color: var(--purple-500); }
+
+.port-year {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.port-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.port-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.port-metrics {
+  display: flex;
+  gap: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.2rem;
+}
+
+.p-metric {
+  flex: 1;
+}
+
+.p-metric strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--gold-400);
+}
+
+.p-metric span {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.port-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
   .hero-container {
