@@ -8,6 +8,7 @@ function initBookingSystem() {
     document.getElementById('openBookingNavBtn'),
     document.getElementById('openBookingMobileBtn'),
     document.getElementById('heroBookBtn'),
+    document.getElementById('aboutConnectBtn'),
     document.getElementById('calcBookBtn'),
     document.getElementById('auditBookBtn'),
     document.getElementById('gameBookConsultBtn')
