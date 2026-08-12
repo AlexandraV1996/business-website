@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanguard Strategy &amp; Business Consulting | Enterprise Growth &amp; Advisory</title>
+  <meta name="description" content="Data-driven business strategy, corporate consulting, digital transformation, and interactive growth analytics for market-leading enterprises.">
+  <meta name="keywords" content="business consulting, strategic advisory, corporate growth, ROI calculator, executive consulting">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Vanilla CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-chart-line-up"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VANGUARD</span>
+          <span class="brand-tagline">STRATEGY &amp; CONSULTING</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#calculator" class="nav-link">ROI Calculator</a>
+        <a href="#audit" class="nav-link">Readiness Audit</a>
+        <a href="#game-section" class="nav-link highlight-link">
+          <i class="fa-solid fa-gamepad"></i> Market Challenge
+        </a>
+        <a href="#case-studies" class="nav-link">Case Studies</a>
+        <a href="#pricing" class="nav-link">Packages</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="btn btn-primary btn-sm mobile-only-btn" id="openBookingMobileBtn">
+          <i class="fa-solid fa-calendar-check"></i> Book Consultation
+        </button>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary nav-cta-btn" id="openBookingNavBtn">
+          <i class="fa-solid fa-calendar-check"></i> Book Strategy Call
+        </button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge hero-badge">
+          <i class="fa-solid fa-shield-halved"></i> 2026 Enterprise Advisory Standard
+        </div>
+        <h1 class="hero-title">
+          Accelerating <span class="gradient-text">Market Leadership</span> &amp; Sustainable Growth
+        </h1>
+        <p class="hero-description">
+          We partner with ambitious CEOs and leadership teams to architect resilient corporate strategies, optimize operations, and unlock high-velocity enterprise expansion.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg" id="heroBookBtn">
+            <i class="fa-solid fa-paper-plane"></i> Book Free Strategy Call
+          </button>
+          <a href="#game-section" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-rocket"></i> Launch Market Runner Challenge
+          </a>
+          <a href="#calculator" class="btn btn-tertiary btn-lg">
+            <i class="fa-solid fa-calculator"></i> Calculate Growth ROI
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <span class="trust-label">TRUSTED BY INDUSTRY LEADERS WORLDWIDE</span>
+          <div class="trust-logos">
+            <div class="trust-logo"><i class="fa-solid fa-building-columns"></i> NEXUS CORP</div>
+            <div class="trust-logo"><i class="fa-solid fa-globe"></i> GLOBAL CAPITAL</div>
+            <div class="trust-logo"><i class="fa-solid fa-microchip"></i> QUANTUM LABS</div>
+            <div class="trust-logo"><i class="fa-solid fa-bolt"></i> AERO VENTURES</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card glass-panel hero-card-main">
+          <div class="card-header-flex">
+            <div>
+              <span class="card-subtitle">LIVE ADVISORY DASHBOARD</span>
+              <h3 class="card-title">Enterprise Growth Velocity</h3>
+            </div>
+            <span class="status-indicator live-pulse">
+              <span class="pulse-dot"></span> Active Consultation
+            </span>
+          </div>
+
+          <div class="metric-chart-preview">
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="--height: 40%"><span>Q1</span></div>
+              <div class="chart-bar" style="--height: 65%"><span>Q2</span></div>
+              <div class="chart-bar" style="--height: 82%"><span>Q3</span></div>
+              <div class="chart-bar active-bar" style="--height: 100%"><span>Q4</span></div>
+            </div>
+            <div class="chart-stat">
+              <span class="stat-num">+340%</span>
+              <span class="stat-label">Avg ARR Acceleration</span>
+            </div>
+          </div>
+
+          <div class="hero-highlights-grid">
+            <div class="highlight-item">
+              <i class="fa-solid fa-arrow-trend-up text-emerald"></i>
+              <div>
+                <strong>$450M+</strong>
+                <span>Value Generated</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-user-shield text-gold"></i>
+              <div>
+                <strong>98.4%</strong>
+                <span>Client Retention</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-chart-pie text-cyan"></i>
+              <div>
+                <strong>14.2x</strong>
+                <span>Average Client ROI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Banner -->
+  <section class="metrics-banner">
+    <div class="container metrics-grid">
+      <div class="metric-box">
+        <div class="metric-value">$450M+</div>
+        <div class="metric-title">Enterprise Value Unlocked</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-value">250+</div>
+        <div class="metric-title">Corporate Engagements</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-value">98.4%</div>
+        <div class="metric-title">Customer Satisfaction</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-value">35+</div>
+        <div class="metric-title">Global Markets Served</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge">CORE COMPETENCIES</div>
+        <h2 class="section-title">Strategic Consulting <span class="gradient-text">Solutions</span></h2>
+        <p class="section-subtitle">Comprehensive advisory designed to solve your most complex strategic, operational, and financial growth challenges.</p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Service Card 1 -->
+        <div class="service-card glass-panel">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-chess-king"></i>
+          </div>
+          <h3 class="service-title">Corporate Strategy &amp; M&amp;A</h3>
+          <p class="service-desc">Tailored growth positioning, portfolio optimization, market entrance strategies, and target M&amp;A valuation.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check text-gold"></i> Competitive Intelligence</li>
+            <li><i class="fa-solid fa-check text-gold"></i> M&amp;A Due Diligence</li>
+            <li><i class="fa-solid fa-check text-gold"></i> 3-5 Year Strategic Roadmaps</li>
+          </ul>
+          <button class="service-learn-btn" data-modal="strategy">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card glass-panel">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="service-title">Revenue &amp; Operations Scaling</h3>
+          <p class="service-desc">Streamlining internal supply chains, automated workflows, RevOps alignment, and margin expansion.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check text-gold"></i> Process Automation</li>
+            <li><i class="fa-solid fa-check text-gold"></i> RevOps Architecture</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Margin Optimization</li>
+          </ul>
+          <button class="service-learn-btn" data-modal="ops">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card glass-panel">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title">Digital Transformation &amp; AI</h3>
+          <p class="service-desc">Modernizing legacy infrastructure, cloud ecosystem transition, and deploying bespoke AI enterprise agents.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check text-gold"></i> AI &amp; LLM Integration</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Modern Data Pipelines</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Tech Stack Auditing</li>
+          </ul>
+          <button class="service-learn-btn" data-modal="digital">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card glass-panel">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <h3 class="service-title">Capital Structuring &amp; Finance</h3>
+          <p class="service-desc">Optimizing capital allocation, debt restructuring, venture fundraising strategy, and CFO advisory.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check text-gold"></i> Fractional CFO Services</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Investor Relations &amp; Decks</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Cash Flow Optimization</li>
+          </ul>
+          <button class="service-learn-btn" data-modal="financial">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card glass-panel">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <h3 class="service-title">Global Market Expansion</h3>
+          <p class="service-desc">Cross-border market entry strategy, localized compliance, international team alignment, and distribution networks.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check text-gold"></i> Geographic Penetration</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Partner Channel Setup</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Regulatory Navigation</li>
+          </ul>
+          <button class="service-learn-btn" data-modal="expansion">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card glass-panel">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+          <h3 class="service-title">Executive Leadership Advisory</h3>
+          <p class="service-desc">CEO coaching, executive alignment workshops, board governance advisory, and change management leadership.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check text-gold"></i> CEO 1-on-1 Advisory</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Board Strategy Alignment</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Change Management</li>
+          </ul>
+          <button class="service-learn-btn" data-modal="leadership">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI Calculator Section -->
+  <section class="section calculator-section" id="calculator">
+    <div class="container">
+      <div class="calc-wrapper glass-panel">
+        <div class="calc-header text-center">
+          <div class="badge">INTERACTIVE ANALYTICS</div>
+          <h2 class="section-title">Enterprise Growth &amp; <span class="gradient-text">ROI Calculator</span></h2>
+          <p class="section-subtitle">Estimate the financial impact and efficiency gains Vanguard Consulting can unlock for your organization.</p>
+        </div>
+
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="form-group">
+              <div class="label-flex">
+                <label for="annualRevenue">Annual Company Revenue ($)</label>
+                <span class="calc-value" id="revVal">$5,000,000</span>
+              </div>
+              <input type="range" id="annualRevenue" min="500000" max="50000000" step="500000" value="5000000">
+              <div class="range-labels">
+                <span>$500K</span>
+                <span>$25M</span>
+                <span>$50M+</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="label-flex">
+                <label for="growthRate">Current Annual Growth Rate (%)</label>
+                <span class="calc-value" id="growthVal">12%</span>
+              </div>
+              <input type="range" id="growthRate" min="-10" max="80" step="1" value="12">
+              <div class="range-labels">
+                <span>-10%</span>
+                <span>35%</span>
+                <span>80%</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="label-flex">
+                <label for="teamSize">Team / Workforce Size</label>
+                <span class="calc-value" id="teamVal">45 Members</span>
+              </div>
+              <input type="range" id="teamSize" min="5" max="300" step="5" value="45">
+              <div class="range-labels">
+                <span>5</span>
+                <span>150</span>
+                <span>300+</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="industrySelect">Industry Sector</label>
+              <select id="industrySelect" class="form-control">
+                <option value="tech">Technology &amp; Software (SaaS)</option>
+                <option value="finance">Financial Services &amp; Fintech</option>
+                <option value="manufacturing">Manufacturing &amp; Supply Chain</option>
+                <option value="health">Healthcare &amp; Life Sciences</option>
+                <option value="retail">E-Commerce &amp; Retail</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-results glass-card-inner">
+            <h3 class="results-title"><i class="fa-solid fa-chart-column"></i> Projected Growth Impact</h3>
+            
+            <div class="result-metrics-grid">
+              <div class="res-box">
+                <span class="res-label">Est. Additional ARR</span>
+                <span class="res-value text-emerald" id="projectedRevenue">+$1,450,000</span>
+              </div>
+              <div class="res-box">
+                <span class="res-label">Annual Cost Savings</span>
+                <span class="res-value text-gold" id="projectedSavings">$280,000</span>
+              </div>
+              <div class="res-box">
+                <span class="res-label">Efficiency Boost</span>
+                <span class="res-value text-cyan" id="projectedEfficiency">+38%</span>
+              </div>
+              <div class="res-box">
+                <span class="res-label">Estimated Engagement ROI</span>
+                <span class="res-value text-purple" id="projectedROI">11.5x</span>
+              </div>
+            </div>
+
+            <div class="calc-recommendation">
+              <strong>Recommended Program:</strong>
+              <p id="recProgramText">Enterprise Strategic Scale Advisory (12-Month Engagement)</p>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="calcBookBtn">
+              <i class="fa-solid fa-calendar-check"></i> Book Consultation to Unlock This Growth
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Readiness Assessment Audit Quiz -->
+  <section class="section audit-section" id="audit">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge">DIAGNOSTIC AUDIT</div>
+        <h2 class="section-title">Business Readiness <span class="gradient-text">Assessment</span></h2>
+        <p class="section-subtitle">Answer 4 strategic questions to evaluate your company's scale readiness and risk exposure.</p>
+      </div>
+
+      <div class="audit-card glass-panel" id="auditCard">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="auditProgress" style="width: 25%"></div>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+          <!-- Question 1 -->
+          <div class="quiz-step active" data-step="1">
+            <span class="step-num">Question 1 of 4</span>
+            <h3 class="quiz-question">How clearly defined is your 3-year revenue and market expansion strategy?</h3>
+            <div class="quiz-options">
+              <button class="quiz-opt-btn" data-score="5">
+                <i class="fa-regular fa-circle-check"></i> Highly structured with quarterly KPI milestones &amp; board alignment.
+              </button>
+              <button class="quiz-opt-btn" data-score="3">
+                <i class="fa-regular fa-circle-check"></i> High-level goals exist, but execution details are loosely documented.
+              </button>
+              <button class="quiz-opt-btn" data-score="1">
+                <i class="fa-regular fa-circle-check"></i> Reactive approach — focused mostly on quarter-by-quarter survival.
+              </button>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="quiz-step" data-step="2">
+            <span class="step-num">Question 2 of 4</span>
+            <h3 class="quiz-question">What level of process automation &amp; AI integration exists in your operations?</h3>
+            <div class="quiz-options">
+              <button class="quiz-opt-btn" data-score="5">
+                <i class="fa-regular fa-circle-check"></i> Advanced AI workflows, unified data pipeline, minimal manual bottleneck.
+              </button>
+              <button class="quiz-opt-btn" data-score="3">
+                <i class="fa-regular fa-circle-check"></i> Partial software automation, but key workflows require manual oversight.
+              </button>
+              <button class="quiz-opt-btn" data-score="1">
+                <i class="fa-regular fa-circle-check"></i> Heavy reliance on spreadsheets and disconnected legacy tools.
+              </button>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="quiz-step" data-step="3">
+            <span class="step-num">Question 3 of 4</span>
+            <h3 class="quiz-question">How resilient are your financial margins to inflation or market downturns?</h3>
+            <div class="quiz-options">
+              <button class="quiz-opt-btn" data-score="5">
+                <i class="fa-regular fa-circle-check"></i> High gross margins (>65%) with strong pricing power and low churn.
+              </button>
+              <button class="quiz-opt-btn" data-score="3">
+                <i class="fa-regular fa-circle-check"></i> Moderate margins (30-65%), vulnerable to customer price sensitivity.
+              </button>
+              <button class="quiz-opt-btn" data-score="1">
+                <i class="fa-regular fa-circle-check"></i> Tight cash runway (&lt;6 months) and unpredictable customer retention.
+              </button>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="quiz-step" data-step="4">
+            <span class="step-num">Question 4 of 4</span>
+            <h3 class="quiz-question">Is your executive leadership team aligned on priorities and change management?</h3>
+            <div class="quiz-options">
+              <button class="quiz-opt-btn" data-score="5">
+                <i class="fa-regular fa-circle-check"></i> 100% executive consensus with agile decision-making speed.
+              </button>
+              <button class="quiz-opt-btn" data-score="3">
+                <i class="fa-regular fa-circle-check"></i> Occasional departmental friction or delayed initiative rollout.
+              </button>
+              <button class="quiz-opt-btn" data-score="1">
+                <i class="fa-regular fa-circle-check"></i> Significant leadership misalignment and high key-person dependency.
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Result Screen -->
+          <div class="quiz-result-screen" id="quizResult" style="display: none;">
+            <div class="audit-badge" id="auditBadge">READINESS RATING</div>
+            <div class="gauge-wrap">
+              <div class="gauge-circle">
+                <span class="gauge-score" id="auditScoreNum">0</span>
+                <span class="gauge-total">/ 100</span>
+              </div>
+            </div>
+            <h3 class="audit-result-title" id="auditTitle">Calculating Score...</h3>
+            <p class="audit-result-desc" id="auditDesc">Please wait...</p>
+
+            <div class="audit-actions">
+              <button class="btn btn-primary" id="auditBookBtn">
+                <i class="fa-solid fa-user-tie"></i> Review Audit with Executive Partner
+              </button>
+              <button class="btn btn-secondary" id="auditResetBtn">
+                <i class="fa-solid fa-rotate-left"></i> Retake Assessment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATED ARCADE GAME SECTION -->
+  <section class="section game-section" id="game-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge hero-badge-gold"><i class="fa-solid fa-trophy"></i> EXECUTIVE ARCADE SIMULATOR</div>
+        <h2 class="section-title">Market Growth <span class="gradient-text">Runner Challenge</span></h2>
+        <p class="section-subtitle">Navigate market turbulence! Jump over economic hurdles, collect capital funding &amp; strategic assets, and lead your corporate rocket to high-velocity growth.</p>
+      </div>
+
+      <div class="game-wrapper glass-panel">
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">REVENUE / SCORE</span>
+            <span class="hud-value" id="gameScore">$0</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">MARKET SHARE</span>
+            <span class="hud-value" id="gameMarketShare">10%</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">ASSETS COLLECTED</span>
+            <span class="hud-value" id="gameAssetsCount">0</span>
+          </div>
+          <div class="hud-item">
+            <span class="hud-label">ALL-TIME HIGH</span>
+            <span class="hud-value text-gold" id="gameHighScore">$0</span>
+          </div>
+          <div class="hud-controls-btn">
+            <button class="btn btn-sm btn-outline" id="gameMuteBtn" title="Sound Toggle">
+              <i class="fa-solid fa-volume-high" id="gameSoundIcon"></i>
+            </button>
+            <button class="btn btn-sm btn-outline" id="gamePauseBtn" title="Pause Game">
+              <i class="fa-solid fa-pause" id="gamePauseIcon"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="canvas-container" id="canvasContainer">
+          <canvas id="gameCanvas" width="900" height="420"></canvas>
+
+          <!-- Start Screen -->
+          <div class="game-overlay" id="gameStartOverlay">
+            <div class="overlay-card glass-panel">
+              <div class="overlay-icon text-gold">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <h2 class="overlay-title">Market Growth Simulator</h2>
+              <p class="overlay-desc">
+                Take control of your Business Executive Rocket! Avoid Market Hazards: <strong>Market Recession, Regulatory Bottlenecks, &amp; Customer Churn</strong>. Collect Strategic Boosts: <strong>Seed Capital ($), Top Talent, &amp; Innovation Shields</strong>!
+              </p>
+              
+              <div class="controls-guide">
+                <div class="guide-key"><span class="key-badge">SPACE</span> or <span class="key-badge">UP ARROW</span> or <span class="key-badge">TAP SCREEN</span> to Jump / Double Jump</div>
+              </div>
+
+              <button class="btn btn-primary btn-lg btn-block" id="startGameBtn">
+                <i class="fa-solid fa-play"></i> Start Market Challenge
+              </button>
+            </div>
+          </div>
+
+          <!-- Game Over Screen -->
+          <div class="game-overlay" id="gameOverOverlay" style="display: none;">
+            <div class="overlay-card glass-panel">
+              <div class="overlay-icon text-red">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <h2 class="overlay-title">Market Hurdle Collision!</h2>
+              <div class="game-over-reason" id="gameOverReason">Hit Regulatory Bottleneck</div>
+
+              <div class="score-summary-grid">
+                <div class="score-sum-box">
+                  <span>FINAL SCORE</span>
+                  <strong id="finalScoreVal">$0</strong>
+                </div>
+                <div class="score-sum-box">
+                  <span>HIGHEST SCORE</span>
+                  <strong id="finalHighScoreVal" class="text-gold">$0</strong>
+                </div>
+              </div>
+
+              <p class="consulting-tip" id="consultingTip">
+                <i class="fa-solid fa-lightbulb text-gold"></i> <strong>Consultant Insight:</strong> Overcoming regulatory bottlenecks requires strategic foresight and compliance automation. Vanguard helps enterprises streamline regulatory risk.
+              </p>
+
+              <div class="overlay-actions">
+                <button class="btn btn-primary btn-block" id="restartGameBtn">
+                  <i class="fa-solid fa-rotate-right"></i> Restart Challenge
+                </button>
+                <button class="btn btn-secondary btn-block" id="gameBookConsultBtn">
+                  <i class="fa-solid fa-calendar-check"></i> Book Consultation to Solve This Hurdle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-controls-panel">
+          <button class="touch-btn jump-touch-btn" id="mobileJumpBtn">
+            <i class="fa-solid fa-arrow-up"></i> JUMP / DOUBLE JUMP
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="section case-studies-section" id="case-studies">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge">PROVEN RESULTS</div>
+        <h2 class="section-title">Enterprise <span class="gradient-text">Case Studies</span></h2>
+        <p class="section-subtitle">Real transformation stories from organizations we've guided to market dominance.</p>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card glass-panel">
+          <div class="case-header">
+            <span class="case-tag">FINTECH &amp; SAAS</span>
+            <h3 class="case-title">Scaling FinTech Platform from $12M to $85M ARR</h3>
+          </div>
+          <p class="case-body">
+            Vanguard restructured revenue operations, optimized gross margin from 42% to 78%, and advised on international market expansion into EMEA.
+          </p>
+          <div class="case-stats">
+            <div><strong>+608%</strong> ARR Increase</div>
+            <div><strong>14 Mo</strong> Engagement</div>
+          </div>
+          <blockquote class="case-quote">
+            "Vanguard's strategic rigor turned our scaling bottlenecks into our highest margin revenue streams."
+            <cite>— Sarah Jenkins, CEO of PayStream</cite>
+          </blockquote>
+        </div>
+
+        <div class="case-card glass-panel">
+          <div class="case-header">
+            <span class="case-tag">HEALTHCARE</span>
+            <h3 class="case-title">AI Digital Transformation for Health Tech Network</h3>
+          </div>
+          <p class="case-body">
+            Integrated enterprise AI automation across 120 hospital networks, reducing operational costs by $18.4M annually while raising patient satisfaction.
+          </p>
+          <div class="case-stats">
+            <div><strong>$18.4M</strong> Annual Savings</div>
+            <div><strong>99.1%</strong> Accuracy</div>
+          </div>
+          <blockquote class="case-quote">
+            "The ROI was realized in less than 90 days. Vanguard is the gold standard of executive advisory."
+            <cite>— Dr. Marcus Thorne, COO of ApexHealth</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge">ENGAGEMENT MODELS</div>
+        <h2 class="section-title">Consultation &amp; <span class="gradient-text">Advisory Packages</span></h2>
+        <p class="section-subtitle">Flexible advisory retainers tailored to your stage of company growth.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card glass-panel">
+          <div class="tier-name">Growth Sprint</div>
+          <div class="tier-price">$7,500 <span>/ mo</span></div>
+          <p class="tier-desc">Ideal for high-growth startups &amp; mid-market firms looking for focused strategy execution.</p>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check text-gold"></i> Bi-weekly Executive Strategy Sessions</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Revenue &amp; Ops Bottleneck Audit</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Quarterly Growth Milestones Plan</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Direct Slack / Email Access</li>
+          </ul>
+          <button class="btn btn-outline btn-block select-tier-btn" data-tier="Growth Sprint">Select Package</button>
+        </div>
+
+        <div class="pricing-card glass-panel featured-tier">
+          <div class="tier-badge">MOST POPULAR</div>
+          <div class="tier-name">Enterprise Transformation</div>
+          <div class="tier-price">$18,500 <span>/ mo</span></div>
+          <p class="tier-desc">Full-spectrum advisory for established enterprises scaling ops, digital transformation, &amp; M&amp;A.</p>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check text-gold"></i> Weekly Executive &amp; Board Advisory</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Dedicated Senior Partner Team</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Custom AI &amp; Automation Integration</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Capital Structuring &amp; M&amp;A Support</li>
+            <li><i class="fa-solid fa-check text-gold"></i> 24/7 Executive Priority Hotline</li>
+          </ul>
+          <button class="btn btn-primary btn-block select-tier-btn" data-tier="Enterprise Transformation">Select Package</button>
+        </div>
+
+        <div class="pricing-card glass-panel">
+          <div class="tier-name">Fractional CXO Advisory</div>
+          <div class="tier-price">$32,000 <span>/ mo</span></div>
+          <p class="tier-desc">Bespoke fractional C-Suite leadership (CFO, COO, CSO) to drive major corporate turnarounds.</p>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-check text-gold"></i> Embedded Fractional Executive Leadership</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Comprehensive Organizational Restructure</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Global Market Expansion &amp; Regulatory Setup</li>
+            <li><i class="fa-solid fa-check text-gold"></i> Investor &amp; Board Representation</li>
+          </ul>
+          <button class="btn btn-outline btn-block select-tier-btn" data-tier="Fractional CXO">Select Package</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card glass-panel">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="badge">LET'S CONNECT</div>
+            <h2 class="contact-title">Schedule Your <span class="gradient-text">Strategic Session</span></h2>
+            <p class="contact-desc">
+              Ready to break through your growth ceiling? Book a complimentary 30-minute executive strategy call with a Vanguard Senior Partner.
+            </p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot text-gold"></i>
+                <div>
+                  <strong>Global Headquarters</strong>
+                  <span>75 Rockefeller Plaza, New York, NY 10019</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-envelope text-gold"></i>
+                <div>
+                  <strong>Direct Advisory Inquiry</strong>
+                  <span>advisory@vanguard-strategy.com</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-phone text-gold"></i>
+                <div>
+                  <strong>Executive Line</strong>
+                  <span>+1 (800) 582-7489</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Alexandra Vance" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Work Email *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="alexandra@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactCompany">Company Name *</label>
+                <input type="text" id="contactCompany" class="form-control" placeholder="e.g. Nexus Global" required>
+              </div>
+              <div class="form-group">
+                <label for="contactInterest">Primary Advisory Interest</label>
+                <select id="contactInterest" class="form-control">
+                  <option value="Corporate Strategy & M&A">Corporate Strategy &amp; M&amp;A</option>
+                  <option value="Revenue & Ops Scaling">Revenue &amp; Ops Scaling</option>
+                  <option value="Digital Transformation & AI">Digital Transformation &amp; AI</option>
+                  <option value="Capital Structuring & Finance">Capital Structuring &amp; Finance</option>
+                  <option value="Executive Coaching">Executive Coaching</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Brief Overview of Goals / Challenges</label>
+              <textarea id="contactMessage" class="form-control" rows="4" placeholder="Tell us about your current growth milestones or operational hurdles..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <i class="fa-solid fa-calendar-check"></i> Request Executive Session
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Booking Modal -->
+  <div class="modal-backdrop" id="bookingModal" style="display: none;">
+    <div class="modal-card glass-panel">
+      <button class="modal-close" id="closeBookingModal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="modal-header">
+        <i class="fa-solid fa-calendar-days text-gold modal-icon"></i>
+        <h3>Reserve Strategy Call</h3>
+        <p>Select your preferred slot for a 1-on-1 strategy session.</p>
+      </div>
+
+      <form id="modalBookingForm">
+        <div class="form-group">
+          <label for="modalName">Name</label>
+          <input type="text" id="modalName" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="modalEmail">Work Email</label>
+          <input type="email" id="modalEmail" class="form-control" placeholder="you@company.com" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalDate">Preferred Date</label>
+            <input type="date" id="modalDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="modalTime">Preferred Time</label>
+            <select id="modalTime" class="form-control" required>
+              <option value="09:00 AM EST">09:00 AM EST</option>
+              <option value="11:00 AM EST">11:00 AM EST</option>
+              <option value="02:00 PM EST">02:00 PM EST</option>
+              <option value="04:00 PM EST">04:00 PM EST</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Service Detail Modal -->
+  <div class="modal-backdrop" id="serviceModal" style="display: none;">
+    <div class="modal-card glass-panel">
+      <button class="modal-close" id="closeServiceModal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="modal-header" id="serviceModalHeader"></div>
+      <div class="modal-body" id="serviceModalBody"></div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-block" id="serviceModalBookBtn">Book Consultation for This Service</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-chart-line-up"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">VANGUARD</span>
+            <span class="brand-tagline">STRATEGY &amp; CONSULTING</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          Empowering enterprise leaders to conquer market volatility, optimize operations, and achieve sustainable scale.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Services</h4>
+        <ul>
+          <li><a href="#services">Corporate Strategy</a></li>
+          <li><a href="#services">Revenue Acceleration</a></li>
+          <li><a href="#services">Digital Transformation</a></li>
+          <li><a href="#services">M&amp;A Advisory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">Tools</h4>
+        <ul>
+          <li><a href="#calculator">ROI Calculator</a></li>
+          <li><a href="#audit">Readiness Quiz</a></li>
+          <li><a href="#game-section">Market Runner Game</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4 class="footer-heading">Executive Insights</h4>
+        <p>Subscribe to our monthly strategic brief sent to 45,000+ CEOs.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="enter your email..." class="form-control" required>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Vanguard Strategy &amp; Business Consulting LLC. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla Scripts -->
+  <script src="js/calculator.js"></script>
+  <script src="js/audit.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
