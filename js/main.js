@@ -28,6 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // FAQ Accordion Handler
+  document.querySelectorAll('.faq-item').forEach(function(item) {
+    const questionBtn = item.querySelector('.faq-question');
+    if (questionBtn) {
+      questionBtn.addEventListener('click', function() {
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('active');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    }
+  });
+
   // Init Modules
   if (typeof initCalculator === 'function') initCalculator();
   if (typeof initAuditQuiz === 'function') initAuditQuiz();

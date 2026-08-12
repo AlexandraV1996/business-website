@@ -227,6 +227,19 @@ function initMarketGame() {
       }
     }
 
+    // Continuous flame trail
+    if (frameCount % 3 === 0) {
+      particles.push({
+        x: player.x,
+        y: player.y + player.height / 2 + (Math.random() - 0.5) * 6,
+        vx: -gameSpeed * 0.5 - Math.random() * 2,
+        vy: (Math.random() - 0.5) * 1.5,
+        radius: Math.random() * 3 + 1,
+        color: (Math.random() > 0.5) ? '#f59e0b' : '#ef4444',
+        life: 15
+      });
+    }
+
     score += Math.round(gameSpeed * 150);
     marketShare = Math.min(99, 10 + Math.floor(score / 500000));
 
